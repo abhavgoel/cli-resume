@@ -1,0 +1,5 @@
+/home/parallels/Desktop/CLI-resume/build/CMakeFiles/abhav-resume.dir
+/home/parallels/Desktop/CLI-resume/build/CMakeFiles/edit_cache.dir
+/home/parallels/Desktop/CLI-resume/build/CMakeFiles/rebuild_cache.dir
+/home/parallels/Desktop/CLI-resume/build/_deps/nlohmann_json-build/CMakeFiles/edit_cache.dir
+/home/parallels/Desktop/CLI-resume/build/_deps/nlohmann_json-build/CMakeFiles/rebuild_cache.dir

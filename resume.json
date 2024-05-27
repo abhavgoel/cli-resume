@@ -1,0 +1,142 @@
+{
+    "personal_info": {
+      "name": "Abhav Goel",
+      "phone": "+91-7464904665",
+      "email": "goelabhav2002@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/abhavgoel/",
+      "github": "https://github.com/abhavgoel",
+      "leetcode": "https://leetcode.com/abhavgoel/"
+    },
+    "experience": [
+      {
+        "company": "Cadence Design Systems",
+        "position": "Software engineering Intern",
+        "location": "Noida, UP",
+        "startDate": "Jan 2024",
+        "endDate": "Present",
+        "responsibilities": [
+          "Working on enhancements/bug fixes within Quantus tool.",
+          "Added an Error message summary, that segregates every unique error encountered during the run.",
+          "Introduced new common options to specify GDSII/OASIS files, reducing customer effort by 50% .",
+          "Helping the team to port the source code to newer RHEL versions.",
+          "Skills used - C++, Linux, EDA, Algorithms"
+        ]
+      },
+      {
+        "company": "Instruments Research and Development, DRDO",
+        "position": "Research Intern",
+        "location": "Hybrid",
+        "startDate": "May 2023",
+        "endDate": "July 2023",
+        "responsibilities": [
+          "Developed python scripts for smooth collection and cleaning of data.",
+          "Succcessfully developed a protolocation that gave optimal results in real-time object detection with mAP50 score of 0.869."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Thapar Institute Of Engineering and Technology",
+        "degree": "Bachelor of Engineering in Computer Science and Engineering",
+        "cgpa": "8.04",
+        "startDate": "2020",
+        "endDate": "2024",
+        "location": "Patiala, Punjab"
+      },
+      {
+        "institution": "Delhi Public School",
+        "degree": "PCM, CBSE 12th",
+        "score": "95.4%",
+        "startDate": "2019",
+        "endDate": "2020",
+        "location": "Saharanpur, Uttar Pradesh"
+      },
+      {
+        "institution": "Delhi Public School",
+        "degree": "CBSE 10th",
+        "score": "95.2%",
+        "startDate": "2017",
+        "endDate": "2018",
+        "location": "Saharanpur, Uttar Pradesh"
+      }
+    ],
+    "projects": [
+      {
+        "name": "FlipStyle",
+        "technologies": "Python, Flask, Streamlit, OpenAI",
+        "link": "https://github.com/abhavgoel/FlipStyle",
+        "description": [
+          "Developed a smart conversational outfit generator using OpenAI API and GPT 3.5 for personalized fashion suggestions.",
+          "Implemented 3 custom made Flask APIs to fetch relevant user data to enhance outfit recommendations.",
+          "Integrated up-to-date fashion trends from Pinterest enriching the platform with current and suitable style suggestions."
+        ]
+      },
+      {
+        "name": "ClientSphere",
+        "technologies": "Python, Django, PostgreSQL, AWS",
+        "link": "https://github.com/abhavgoel/ClientSphere",
+        "description": [
+          "Created a customer management web app with CRUD functionality, that facilitates management of customer data.",
+          "Implemented decorators for authorization and login, and signals for automated group assignment post registration.",
+          "Enabled efficient filtering and viewing of customers according to date or customer added notes.",
+          "Included password reset functionality enhancing user convenience.",
+          "Deployed the database on Amazon RDS and utilized AWS S3 for hosting static files and storing user profile images."
+        ]
+      },
+      {
+        "name": "IntelliChoice - Streamlining Decision Making",
+        "technologies": "Python, Flask",
+        "link": "https://abhavgoel.pythonanywhere.com/",
+        "description": [
+          "Engineered a python package that implements TOPSIS algorithm, a multiple-criteria decision-making algorithm.",
+          "The project offers an efficient decision-making solution for complex scenarios, providing valuable insights and recommendations to users.",
+          "Created a Flask based web service, enabling users to input data, calculate TOPSIS scores and ranks, and receive the results via email within just 2 seconds."
+        ]
+      }
+    ],
+    "achievements": [
+      "Semi-Finalist Flipkart GRID 5.0",
+      "Finalist TechGig CodeGladiators 2023. Among 1000 top coders from a pool of 136000+ coders.",
+      "Global rank 1515 in Leetcode Weekly contest 356.",
+      "Served as a repository Maintainer for HacktoberFest'21 - an open-source event with over 50+ contributors. https://github.com/AbhavGoel32/Hacktoberfest2021"
+    ],
+    "responsibilities": [
+      {
+        "position": "Technical Team Lead",
+        "organization": "Backslash Computing Society",
+        "startDate": "2021",
+        "endDate": "2022",
+        "location": "Patiala, Punjab",
+        "responsibilities": [
+          "Led a team of 15+ members to organize impactful Inter and Intra institute events, engaging over 800+ participants.",
+          "Crafted precise event plans and question sets, ensuring the smooth flow of contests and activities.",
+          "Provided guidance to foster teamwork, resulting in the successful execution of 3 diverse events."
+        ]
+      }
+    ],
+    "skills": {
+      "technical": [
+        "C++",
+        "Java(basics)",
+        "Python",
+        "SQL",
+        "Data Structures",
+        "Scripting"
+      ],
+      "frameworks": [
+        "Django",
+        "Flask"
+      ],
+      "tools": [
+        "Git",
+        "Github",
+        "VS Code",
+        "Perforce"
+      ],
+      "os": [
+        "Windows",
+        "MacOS",
+        "Linux"
+      ]
+    }
+  }
