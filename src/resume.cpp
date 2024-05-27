@@ -2,19 +2,12 @@
 #include <fstream>
 #include "nlohmann/json.hpp"
 #include "resume.h"
-#define RESET "\033[0m"
-#define RED "\033[31m"
-#define GREEN "\033[32m"
-#define YELLOW "\033[33m"
-#define BLUE "\033[34m"
-#define MAGENTA "\033[35m"
-#define CYAN "\033[36m"
-#define WHITE "\033[37m"
+
 
 // Data structures to hold parsed resume data
 PersonalInfo personal_info;
 std::vector<Experience> experiences;
-std::vector<Education> education;
+std::vector<Education> educations;
 std::vector<Project> projects;
 std::vector<std::string> achievements;
 std::vector<Experience> responsibilities;
@@ -58,28 +51,28 @@ void parse_resume_from_json(const std::string& file_path) {
     }
 
     // Education
-    // auto education_json = json_data["education"];
-    // for (const auto& edu_json : education_json) {
-    //     Education edu;
-    //     edu.institution = edu_json["institution"];
-    //     edu.degree = edu_json["degree"];
-    //     edu.cgpa = edu_json["cgpa"];
-    //     edu.startDate = edu_json["startDate"];
-    //     edu.endDate = edu_json["endDate"];
-    //     edu.location = edu_json["location"];
-    //     education.push_back(edu);
-    // }
+    auto education_json = json_data["education"];
+    for (const auto& edu_json : education_json) {
+        Education edu;
+        edu.institution = edu_json["institution"];
+        edu.degree = edu_json["degree"];
+        edu.score = edu_json["score"];
+        edu.startDate = edu_json["startDate"];
+        edu.endDate = edu_json["endDate"];
+        edu.location = edu_json["location"];
+        educations.push_back(edu);
+    }
 
-    // // Projects
-    // auto projects_json = json_data["projects"];
-    // for (const auto& proj_json : projects_json) {
-    //     Project proj;
-    //     proj.name = proj_json["name"];
-    //     proj.technologies = proj_json["technologies"];
-    //     proj.link = proj_json["link"];
-    //     proj.description = proj_json["description"].get<std::vector<std::string>>();
-    //     projects.push_back(proj);
-    // }
+    // Projects
+    auto projects_json = json_data["projects"];
+    for (const auto& proj_json : projects_json) {
+        Project proj;
+        proj.name = proj_json["name"];
+        proj.technologies = proj_json["technologies"];
+        proj.link = proj_json["link"];
+        proj.description = proj_json["description"].get<std::vector<std::string>>();
+        projects.push_back(proj);
+    }
 
     // // Achievements
     // achievements = json_data["achievements"].get<std::vector<std::string>>();
@@ -107,17 +100,17 @@ void parse_resume_from_json(const std::string& file_path) {
 
 //functions to print the information
 void print_personal_info() {
-    // std::cout << "\033[1mPersonal Information:\033[0m\n";
-    std::cout << "Name: \033[34m" << personal_info.name << "\033[0m\n";
+    std::cout << BLUE <<"Personal Information: "<<RESET<< "\n";
+    std::cout << "Name: " << personal_info.name << "\n";
     std::cout << "Phone: " << personal_info.phone << "\n";
-    std::cout << "Email: \033[36m" << personal_info.email << "\033[0m\n";
-    std::cout << "LinkedIn: \033[32m" << personal_info.linkedin << "\033[0m\n";
-    std::cout << "GitHub: \033[32m" << personal_info.github << "\033[0m\n";
-    std::cout << "LeetCode: \033[32m" << personal_info.leetcode << "\033[0m\n\n";
+    std::cout << "Email: " << personal_info.email << "\n";
+    std::cout << "LinkedIn: " << personal_info.linkedin << "\n";
+    std::cout << "GitHub: " << personal_info.github << "\n";
+    std::cout << "LeetCode: " << personal_info.leetcode << "\n\n";
 }
 
 void print_experience() {
-    // std::cout << "Experience:\n";
+    std::cout << "Experience:\n";
     for (const auto& exp : experiences) {
         std::cout << "Company: " << exp.company << "\n";
         std::cout << "Position: " << exp.position << "\n";
@@ -130,6 +123,18 @@ void print_experience() {
         std::cout << "\n";
     }
     std::cout << "\n";
+}
+void print_education() {
+    std::cout << "Education:\n\n";
+    for (const auto& edu : educations) {
+        std::cout << "Institution: " << edu.institution << "\n";
+        std::cout << "Degree: " << edu.degree << "\n";
+        std::cout << "Score: " << edu.score << "\n";
+        std::cout << "Duration: " << edu.startDate << " - " << edu.endDate << "\n";
+        std::cout << "Location: " << edu.location <<"\n\n";
+    }
+    std::cout<<"\n";
+
 }
 
 
